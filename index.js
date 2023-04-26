@@ -3,7 +3,6 @@ const app = require("./app");
 const {
   DB_USER,
   DB_PASSWORD,
-  DB_HOST,
   IP_SERVER,
   API_VERSION,
 } = require("./constants");
@@ -11,7 +10,7 @@ const {
 const PORT = process.env.POST || 3977;
 
 mongoose.connect(
-  `mongodb://localhost:27017/test`,
+  `mongodb+srv://${DB_USER}:${DB_PASSWORD}@proyectmongos.ta9f3vu.mongodb.net/?retryWrites=true&w=majority`,
   (error) => {
     if (error) throw error;
 

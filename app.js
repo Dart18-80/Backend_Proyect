@@ -30,5 +30,8 @@ app.use(`/api/${API_VERSION}`, menuRoutes);
 app.use(`/api/${API_VERSION}`, courseRoutes);
 app.use(`/api/${API_VERSION}`, postRoutes);
 app.use(`/api/${API_VERSION}`, newsletterRoutes);
+app.get(`/api/${API_VERSION}`, function(req, res) {
+    res.send('Task Server running.');
+});
 
 module.exports = app;

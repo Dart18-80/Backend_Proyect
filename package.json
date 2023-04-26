@@ -1,9 +1,9 @@
 {
-  "name": "web-personal-api",
+  "name": "backend-proyect",
   "version": "0.0.1",
   "description": "El api de la web personal",
   "main": "index.js",
-  "author": "Agustin Navarro Galdon",
+  "author": "Diego Alejandro Ruiz Trabanino",
   "license": "MIT",
   "scripts": {
     "start": "node index.js",

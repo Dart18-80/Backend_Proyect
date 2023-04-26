@@ -7,7 +7,7 @@ const {
   API_VERSION,
 } = require("./constants");
 
-const PORT = process.env.POST || 3977;
+const PORT = process.env.PORT || 3977;
 
 mongoose.connect(
   `mongodb+srv://${DB_USER}:${DB_PASSWORD}@proyectmongos.ta9f3vu.mongodb.net/?retryWrites=true&w=majority`,
